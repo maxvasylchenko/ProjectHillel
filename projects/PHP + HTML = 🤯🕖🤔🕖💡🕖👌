@@ -1,0 +1,25 @@
+<?php
+$array = ['one', 'two', 'three', 'four', 'five'];
+function generatelist(array $array) : string
+{
+    $headline = 'Final Countdown';
+    $html = "<h3> $headline </h3>";
+    $html .= '<ol>';
+    $list = array_reverse($array);
+foreach ($list as $countdown)
+{
+    $html .= "<li> $countdown </li>";
+}
+$html .= '</ol>';
+return $html;
+}
+?>
+<! doctype html
+<html>
+<head>
+<title> Функция для генерации html списков </title>
+</head>
+    <body>
+   <?= generatelist($array) ?>
+</body>
+</html>
