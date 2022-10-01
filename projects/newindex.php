@@ -55,8 +55,8 @@ class NewSchool extends OldSchool
     }
 }
 $obj = new NewSchool;
-$obj1 = new NewSchool;
-echo $obj->giveAway(2)*$obj1->square(1);
+$obj = new NewSchool;
+echo $obj->giveAway(2)*$obj->square(1);
 class YoungSchool extends OldSchool
 {
     public $w;
@@ -78,9 +78,9 @@ class YoungSchool extends OldSchool
         return $square;
     }
 }
-$obj2 = new YoungSchool;
-$obj3 = new YoungSchool;
-echo $obj2->giveAway2(4)+$obj3->square(3);
+$obj1 = new YoungSchool;
+$obj1 = new YoungSchool;
+echo $obj1->giveAway2(4)+$obj1->square(3);
 final class SchoolJunior extends OldSchool
 {
     public $u;
@@ -102,9 +102,9 @@ final class SchoolJunior extends OldSchool
         return $square;
     }
 }
-$obj4 = new SchoolJunior;
-$obj4 = new SchoolJunior;
-echo $obj4->giveAway3(6)+$obj4->square(5);
+$obj2 = new SchoolJunior;
+$obj2 = new SchoolJunior;
+echo $obj2->giveAway3(6)+$obj2->square(5);
 /*
 3.Создать по 2 наследника от наследников первого уровня:
 1)Каждое свойство должно иметь геттер и сеттер.
@@ -136,10 +136,10 @@ class NewestSchool extends NewSchool
     return $square;
 }
 }
-$obj5 = new NewestSchool;
-$obj5 = new NewestSchool;
-$obj5 = new NewestSchool;
-echo $obj5->giveAway4(9)+$obj5->square(8)+$obj5->giveAway5(7);
+$obj3 = new NewestSchool;
+$obj3 = new NewestSchool;
+$obj3 = new NewestSchool;
+echo $obj3->giveAway4(9)+$obj3->square(8)+$obj3->giveAway5(7);
 class CoolestSchool extends YoungSchool
 {
     public $n;
@@ -165,7 +165,7 @@ class CoolestSchool extends YoungSchool
         return $square;
     }
 }
-$obj6 = new CoolestSchool;
-$obj6 = new CoolestSchool;
-$obj6 = new CoolestSchool;
-echo $obj6->giveAway6(12)+$obj6->square(11)+$obj6->giveAway7(10);
+$obj4 = new CoolestSchool;
+$obj4 = new CoolestSchool;
+$obj4 = new CoolestSchool;
+echo $obj4->giveAway6(12)+$obj4->square(11)+$obj4->giveAway7(10);
