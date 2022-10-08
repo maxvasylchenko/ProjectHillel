@@ -1,8 +1,8 @@
 <?php
 namespace Core;
+
 use App\Controllers\Page404;
-//use App\Controllers\Home;
-//use App\Controllers\Admin;
+
 class Router
 {
     private array $exp = [];
