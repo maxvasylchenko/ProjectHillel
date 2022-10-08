@@ -1,8 +1,8 @@
 <?php
 namespace Core;
-
-use App\Controllers\Error404;
-
+use App\Controllers\Page404;
+//use App\Controllers\Home;
+//use App\Controllers\Admin;
 class Router
 {
     private array $exp = [];
@@ -16,7 +16,7 @@ class Router
         if (class_exists($classPath)) {
             $obj = new $classPath;
         } else {
-            $obj = new Error404();
+            $obj = new Page404();
         }
         $obj->index();
     }
