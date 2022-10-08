@@ -1,12 +1,11 @@
 <?php
 namespace App\Controllers;
 
-class Error404 implements ControllerInterface
+class Error404
 {
     public function index()
     {
-       return var_dump('i am error404');
+       var_dump('i am error404');
     }
 }
-?>
 

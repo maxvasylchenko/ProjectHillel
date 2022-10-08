@@ -1,16 +1,10 @@
 <?php
 namespace App\Controllers;
 
-class Home implements ControllerInterface
+class Home
 {
     public function index()
     {
-       return var_dump('i am home');
-    }
-
-    public function home()
-    {
-       return var_dump('i am home\edit');
+      var_dump('i am home');
     }
 }
-?>

@@ -14,8 +14,8 @@
   { 
     "psr-4":
   {
-    "App\\": "app/",
-    "Core\\": "core/"
+    "Core\\": "core/",
+    "App\\": "app/"
   }
   }
 }
