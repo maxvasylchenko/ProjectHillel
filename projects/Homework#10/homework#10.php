@@ -22,8 +22,8 @@ $arithmeticMean = $sumArr/$countArr;
 echo $arithmeticMean;
 echo '<br>';
 //3) Вывести 5 минимальных чисел из массива.
-rsort($arr);
-$result = array_slice($arr, -5);
+sort($arr);
+$result = array_slice($arr, 0, 5);
 var_dump ($result);
 echo '<br>';
 /* еще один вариант:
@@ -43,8 +43,8 @@ foreach ($arr as $key => $number) {
 }
 var_dump($array);*/
 //4) Вывести 5 максимальных чисел из массива.
-rsort($arr);
-$result = array_slice($arr, 0, 5);
+sort($arr);
+$result = array_slice($arr, -5);
 var_dump ($result);
 echo '<br>';
 //5) Отсортированный массив по возрастанию.
