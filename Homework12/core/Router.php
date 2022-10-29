@@ -22,12 +22,12 @@ class Router
         var_dump($this->exp);
 
         if (array_key_exists($this->exp, $this->options)){
-            $classPath = 'App\Controllers\\' . $this->getClassName();
+            $classPath = 'App\Controllers\\'. $this->getClassName();
         } else {
             $classPath = new Page404();
         }
 
-        if (class_exists($classPath)){
+        if (class_exists($classPath)) {
             $obj = new $classPath;
         } else {
             $obj = new Page404();
@@ -35,7 +35,7 @@ class Router
         $methodName = $this->getMethodName();
 
         if (method_exists($obj, $methodName)) {
-            $obj -> $methodName();
+            $obj->$methodName();
         } else {
             (new Page404)->index();
         }

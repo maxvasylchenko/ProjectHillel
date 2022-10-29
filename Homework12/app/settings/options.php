@@ -6,5 +6,8 @@ return [
     'admin'=>'Admin:index',
     'admin/home'=>'Admin:index',
     'admin/home/edit'=>'Admin:edit',
-    'user'=>'User:index',
+    'users'=>'Users:index',
+    'users/edit'=>'Users:edit',
+    'posts'=>'Posts:index',
+    'contacts'=>'Contacts:index',
 ];

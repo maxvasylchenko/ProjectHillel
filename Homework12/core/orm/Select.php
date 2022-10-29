@@ -1,5 +1,6 @@
 <?php
 namespace Core\orm;
+use Core\orm\common\Connector;
 class Select
 {
     protected $tableName;

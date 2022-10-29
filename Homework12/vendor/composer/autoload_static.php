@@ -42,6 +42,7 @@ class ComposerStaticInit4606df964d37253b550c00bf535c408d
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
         'Core\\View' => __DIR__ . '/../..' . '/core/View.php',
+        'Core\\orm\\Insert' => __DIR__ . '/../..' . '/core/orm/Insert.php',
         'Core\\orm\\Select' => __DIR__ . '/../..' . '/core/orm/Select.php',
         'Core\\orm\\common\\Connector' => __DIR__ . '/../..' . '/core/orm/common/Connector.php',
     );

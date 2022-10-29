@@ -19,6 +19,7 @@ return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Core\\Router' => $baseDir . '/core/Router.php',
     'Core\\View' => $baseDir . '/core/View.php',
+    'Core\\orm\\Insert' => $baseDir . '/core/orm/Insert.php',
     'Core\\orm\\Select' => $baseDir . '/core/orm/Select.php',
     'Core\\orm\\common\\Connector' => $baseDir . '/core/orm/common/Connector.php',
 );
