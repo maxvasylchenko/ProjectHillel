@@ -1,3 +1,10 @@
+<!doctype html>
+<html lang ="ru">
+<head>
+    <title> Register </title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body>
 <form action ="" method="POST">
     <div class = "form-group">
         <label for = "name">Name</label>
@@ -17,3 +24,5 @@
     </div>
     <button type="submit">Отправить</button>
 </form>
+</body>
+</html>
