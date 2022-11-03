@@ -14,10 +14,11 @@ class Auth implements ControllerInterface1
     }
     public function login ()
 {
+    //var_dump($_SESSION['user']);
     $data = array_filter($_POST);
     if (!empty($data)){
         $obj = new User();
-        $result = $obj->auth($data['email'], $data['password']);
+        $_SESSION['user'] = $result = $obj->auth($data['email'], $data['password']);
         var_dump($result);
     }
     //View::generate('auth/login', $data);

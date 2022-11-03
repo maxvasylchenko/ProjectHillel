@@ -6,6 +6,7 @@ class Users implements ControllerInterface1
 {
     public function index()
     {
+        var_dump($_SESSION['user']);
         $obj = new User();
         $path = 'view_1';
         $data['users'] = $obj->getAll();

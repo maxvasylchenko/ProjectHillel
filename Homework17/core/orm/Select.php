@@ -1,39 +1,23 @@
 <?php
 namespace Core\orm;
 use Core\orm\common\Connector;
-class Select
+class Select extends Sql
 {
     protected $tableName;
     protected $columns = '*';
-    protected $where = '';
+    protected Where $where;
 
-    /**
-     * @return string
-     */
-    public function getWhere(): string
+    public function where ($condition)
     {
-        return $this->where;
+       $this->where = new Where;
+       $this->where->setWhere($condition);
     }
-
-    /**
-     * @param string $where
-     */
-    public function setWhere(string $where): void
-    {
-        $this->where = $where;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getTableName()
     {
         return $this->tableName;
     }
 
-    /**
-     * @param mixed $tableName
-     */
+
     public function setTableName($tableName): void
     {
         $this->tableName = $tableName;
@@ -59,7 +43,7 @@ class Select
     {
         $sql = 'SELECT ' .$this->columns. ' FROM '. $this->tableName;
         if (!empty($this->where)){
-            $sql .= ' WHERE ' . $this->where;
+            $sql .= $this->where->getWhere();
         }
         return $sql;
     }
@@ -71,3 +55,5 @@ class Select
     }
     // SELECT * FROM `users`
 }
+//https://codersrank.io/
+//https://www.codewars.com/collections/php-in-action

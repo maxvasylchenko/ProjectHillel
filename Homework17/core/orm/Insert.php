@@ -3,22 +3,20 @@
 namespace Core\orm;
 use Core\orm\common\Connector;
 
-class Insert
+class Insert extends Sql
 {
-private string $tableName;
-private array $column = [];
-private array $value = [];
-    /**
-     * @return string
-     */
+    //INSERT INTO table_name (column1, column2, column3, ...)
+    //VALUES (value1, value2, value 3, ...)
+    private string $tableName;
+    private array $column = [];
+    private array $value = [];
+    /*
     public function getTableName(): string
     {
         return $this->tableName;
     }
 
-    /**
-     * @param string $tableName
-     */
+
     public function setTableName(string $tableName): void
     {
         $this->tableName = $tableName;
